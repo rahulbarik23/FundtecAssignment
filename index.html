@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<!-- Meno Bar -->
+    <header>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <div>
+            <h1>RAHUL BARIK</h1>
+        </div>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Toggle Theme</button>
+    </header>
+
+    <!-- Hero Section -->
+
+    <section id="home" class="hero animated">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Hi Myself</h1>
+                <h1>RAHUL BARIK</h1>
+                <h3 class="role-heading">Full Stack Java Developer | Problem Solver</h3>
+                <p class="hero-para">A highly motivated and recently experienced software developer transitioning into a Full Stack Java Developer role. Possessing a solid foundation in software development principles gained through one year of experience, I'm eager to leverage my skills to build and maintain robust, scalable web applications. My passion for problem-solving, combined with a strong understanding of Java and proficiency in React.js for front-end development, to build dynamic and user-friendly web applications , allows me to contribute effectively to both front-end and back-end development tasks. I am committed to continuous learning and adapting to new technologies to deliver high-quality solutions.</p>
+               <button class="download-resume" onclick="downloadResume()" >Download Resume</button>
+            </div>
+            <div >
+                <img class="profile-pic" src="/Image/Rahul-image.jpeg" alt="Your Photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about" class="about animated">
+       
+        <div class="aboutme-section">
+            <div>
+                <img class="About-pic" src="/Image/Rahul-image2.jpeg" alt="Your Photo">
+            </div>
+
+            <div class="about-section2">
+                <h2 class="aboutme-heading">About Me</h2>
+                <p>"A highly motivated and skilled software developer with one year of professional experience, complemented by an intensive year-long full-stack web development training. My background encompasses both practical application and comprehensive learning, equipping me with a strong foundation in React.js for building dynamic user interfaces, Spring Boot for robust back-end development, and a solid understanding of data structures and algorithms (DSA) for efficient problem-solving. I'm proficient in database management using MySQL and eager to leverage my skills to contribute to innovative projects and deliver high-quality, scalable solutions."</p>
+        <ul>
+            
+            <li><i class="fa-brands fa-html5"></i> HTML</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+            <li><i class="fa-brands fa-react"></i> React </li>
+            <li><i class="fa-brands fa-java"></i> Java</li>
+            <li> <i class="fa-solid fa-leaf"></i> Spring Boot</li>
+            <li><i class="fa-solid fa-database"></i> My SQL</li>
+        </ul>
+            </div>
+        </div>
+    </section>
+
+   <!-- Project Section -->
+
+    <section id="projects" class="projects animated">
+        <div> 
+            
+            <h2 class="project-heading">Project</h2>
+        </div>
+        
+        <div class="project-grid">
+            <div class="project">
+                <img src="Image/Esate-project.png" alt="Project 1">
+                <h3>Real Esate-project</h3>
+                <p>Developed a dynamic real estate web application using The platform allows users to browse property listings with advanced filtering, view detailed property information, and contact agents directly. Implemented key features such as interactive maps and user authentication.</p>
+                <a href="https://estate-five-eta.vercel.app/">View Project</a>
+            </div>
+
+            <div class="project">
+                <img src="Image/Todo-project.png" alt="Project 2">
+                <h3>Todo App Project </h3>
+                <p>Developed a user-friendly To-Do application that allows users to create, manage, and track their tasks efficiently. Built with [Technologies Used, e.g., React, JavaScript, HTML, CSS], the app features task prioritization, due dates, and local storage for persistence.</p>
+                <a href="https://todo-app-eight-theta-65.vercel.app/">View Project</a>
+            </div>
+
+            <div class="project">
+                <img src="Image/Bookapp-project.png" alt="Project 3">
+                <h3>Book App</h3>
+                <p>Developed a web application that leverages the Google Books API to provide users with a convenient platform for searching, browsing, and discovering books. Built using [Technologies Used, HTML , CSS , JavaScript, React], the app allows users to search by title, author, or keywords, view book details</p>
+                <a href="https://book-web-app-react.vercel.app/">View Project</a>
+            </div>
+        </div>
+    </section>
+   
+    <!--  Contact Section -->
+
+    <section id="contact" class="contact animated">
+        <h2 class="contactme-heading">Contact Me</h2>
+        <form id="contactForm" action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+            <span id="nameError" class="error"></span>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+            <span id="emailError" class="error"></span>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" ></textarea>
+            <span id="messageError" class="error"></span>
+    
+            <button type="submit">Send</button>
+        </form>
+        
+    </section>
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/rahulbarik23"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rahul-barik-/"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2025 Rahul Barik. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+       
+    </script>
+</body>
+</html>
